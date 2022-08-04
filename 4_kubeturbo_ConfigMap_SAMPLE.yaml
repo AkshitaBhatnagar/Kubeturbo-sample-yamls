@@ -17,15 +17,15 @@ data:
         "communicationConfig": {
             "serverMeta": {
                 "version": "<INSERT TURBONOMIC VERSION>",
-                "turboServer": "https://<INSERT TURBONOMIC IP>"
+                "turboServer": "https://nginx-turbonomic.apps.cluster-lbe417.sandbox838.opentlc.com/"
             },
             "restAPIConfig": {
-                "opsManagerUserName": "<TURBONOMIC ADMIN USER>",
-                "opsManagerPassword": "<TURBONOMIC ADMIN PASSWORD>"
+                "opsManagerUserName": "administrator",
+                "opsManagerPassword": "turbo"
             }
         },
         "targetConfig": {
-            "targetName":"turbonomic_GKE_target"
+            "targetName":"turbonomic_EKS_target"
         },
         "masterNodeDetectors": {
            "nodeNamePatterns": [ ".*master.*" ],
